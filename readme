@@ -1,0 +1,8 @@
+mkdir wordpress-ssl
+cd wordpress-ssl
+#Replace your-domain.com with your actual domain name, and make sure to place your SSL certificate and key files in the nginx/certs folder.
+
+#Set up SSL certificates. Place your SSL certificate (your-domain.crt) and private key (your-domain.key) in the nginx/certs folder.
+
+#Start your containers using Docker Compose: docker-compose up -d
+
