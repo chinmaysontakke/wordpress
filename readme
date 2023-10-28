@@ -5,4 +5,10 @@ cd wordpress-ssl
 #Set up SSL certificates. Place your SSL certificate (your-domain.crt) and private key (your-domain.key) in the nginx/certs folder.
 
 #Start your containers using Docker Compose: docker-compose up -d
+#This command will start the WordPress, MySQL, and Nginx containers in the background.
+
+#Access your WordPress site with SSL. Open your web browser and go to https://your-domain.com. Your WordPress site should be accessible over HTTPS.
+#Make sure to replace your-domain.com with your actual domain, and ensure that your DNS settings point to the server running the Docker containers.
+
+#By following these steps, you'll have a WordPress site running in a Docker container with SSL certificates installed, and Nginx handling SSL termination.
 
