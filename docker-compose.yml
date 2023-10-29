@@ -40,17 +40,7 @@ services:
       - wordpress
     networks:
       - wpnet
-  certbot:
-    image: certbot/certbot
-    container_name: certbot
-    restart: "no"
-    command: certonly --webroot --webroot-path=/var/www/html --email $EMAIL --agree-tos -d $DOMAIN
-    volumes:
-      - ./letsencrypt:/etc/letsencrypt
-    depends_on:
-      - nginx
-      networks:
-       wpnet:
+ 
 networks:
   wpnet:
 
